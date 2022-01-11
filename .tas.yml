@@ -2,7 +2,7 @@
 framework: jest
 postMerge:
   pattern:
-    - 'test/unit/**/*.test.{js,ts,tsx}'
+    - 'test/unit/**/*.test.ts'
 preMerge:
   pattern:
     - 'test/unit/**/*.test.{js,ts,tsx}'
