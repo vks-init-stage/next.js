@@ -1,0 +1,15 @@
+---
+framework: jest
+postMerge:
+  pattern:
+    - 'test/unit/**/*.test.{js,ts,tsx}'
+preMerge:
+  pattern:
+    - 'test/unit/**/*.test.{js,ts,tsx}'
+preRun:
+  command:
+    - yarn
+postRun:
+  command:
+    - yarn --version
+version: 1.0
