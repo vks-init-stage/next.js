@@ -1,15 +1,21 @@
 ---
 framework: jest
-postMerge:
-  pattern:
-    - 'test/unit/**/*.test.ts'
-preMerge:
-  pattern:
-    - 'test/unit/**/*.test.{js,ts,tsx}'
 preRun:
   command:
     - yarn
+postMerge:
+  env:
+    TRACE_PLAYWRIGHT: true
+    HEADLESS: true
+  pattern:
+    - 'test/unit/**/*.test.{js,ts,tsx}'
+preMerge:
+  env:
+    TRACE_PLAYWRIGHT: true
+    HEADLESS: true
+  pattern:
+    - 'test/unit/**/*.test.{js,ts,tsx}'
 postRun:
   command:
-    - yarn --version
-version: 1.0
+    - node --version
+version: 2.1
