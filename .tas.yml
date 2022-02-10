@@ -1,5 +1,6 @@
 ---
 framework: jest
+tier: medium
 preRun:
   command:
     - yarn
