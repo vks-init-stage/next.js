@@ -18,4 +18,5 @@ preMerge:
 postRun:
   command:
     - node --version
+parallelism: 2
 version: 2.1
