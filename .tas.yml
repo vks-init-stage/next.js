@@ -1,9 +1,9 @@
 ---
 framework: jest
 tier: medium
-# preRun:
-#   command:
-#     - yarn
+preRun:
+  command:
+    - yarn
 postMerge:
   env:
     TRACE_PLAYWRIGHT: true
