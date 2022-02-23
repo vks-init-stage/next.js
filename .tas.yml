@@ -1,16 +1,15 @@
 ---
 framework: jest
-tier: medium
 preRun:
   command:
     - yarn
-postMerge:
+preMerge:
   env:
     TRACE_PLAYWRIGHT: true
     HEADLESS: true
   pattern:
     - 'test/unit/**/*.test.{js,ts,tsx}'
-preMerge:
+postMerge:
   env:
     TRACE_PLAYWRIGHT: true
     HEADLESS: true
@@ -19,5 +18,4 @@ preMerge:
 postRun:
   command:
     - node --version
-parallelism: 2
 version: 1.0
