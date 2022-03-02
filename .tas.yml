@@ -17,5 +17,5 @@ postMerge:
     - 'test/unit/**/*.test.{js,ts,tsx}'
 postRun:
   command:
-    - yarn --version
+    - node --version
 version: 1.0
